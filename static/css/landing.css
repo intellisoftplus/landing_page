@@ -28,7 +28,7 @@ body {
 .jumbotron span {
 	color: #14b646;
 }
-.form-ct h2, .jumbotron h1, .hignlights p {
+.form-ct h2, .jumbotron h1, .highlights p {
 	color: #fff;
 }
 .jumbotron h1 {
@@ -36,17 +36,19 @@ body {
 	font-weight: 600;
 	line-height: 1.5;
 }
-.hignlights p {
+.highlights p {
 	display: inline-block;
+	
 }
 /********************************
  Layouts
 ********************************/
-.hignlights {
+.highlights {
 	margin: 10px 0;
 	background-color: rgba(0,0,0,0.5);
 	padding: 30px 20px;
 	width: 90%;
+	
 }
 /********************************
  Buttons
@@ -101,15 +103,74 @@ body {
 .form-ct.f-heading h2 {
 	margin-bottom: -20px;
 }
-.form-control::-webkit-input-placeholder { color: #dedede; }
-.form-control:-moz-placeholder { color:#dedede; }
-.form-control::-moz-placeholder { color: #dedede; }
-.form-control:-ms-input-placeholder { color: #dedede; }
+.form-control::-webkit-input-placeholder { 
+	color: #dedede; 
 }
+.form-control:-moz-placeholder { 
+	color:#dedede; 
+}
+.form-control::-moz-placeholder { 
+	color: #dedede; 
+}
+.form-control:-ms-input-placeholder { 
+	color: #dedede; 
+}
+.jumbotron .google img {
+	width: 40%;
+	margin-top: 20px;
+}
+
 /********************************
  Media Queries
 ********************************/
-
+@media screen and (max-width: 1140px) {
+	.jumbotron .ct-text h1, .form-ct h2 {
+		font-size: 2em;
+	}
+	.highlights p {
+		font-size: 1.3em;
+	}
+}
+@media screen and (max-width: 980px) {
+	.form-ct h2, .jumbotron .ct-text h1 {
+		font-size: 1.7em;
+	}
+	.highlights p {
+		font-size: 1.2em;
+	}
+}
+@media screen and (max-width: 767px) {
+	.jumbotron {
+		background-position: 65% 100%; 
+	}
+	.jumbotron .ct-text , .highlights , .form-ct, .form-ct, .jumbotron .col-sm-6:nth-child(2) {
+		width: 80%;
+		margin: auto;
+	}
+	.form-ct h2 .fa-arrow-right {
+		display: none;
+	}
+	.form-ct.f-heading h2 {
+		padding-top: 20px;
+		text-align: left;
+	}
+	.jumbotron .google img {
+	width: 30%;
+	margin-top: 20px;
+  margin-left: 8%;
+}
+}
+@media screen and (max-width: 560px) {
+	.jumbotron .ct-text , .highlights , .form-ct, .form-ct, .jumbotron .col-sm-6:nth-child(2) {
+		width: 95%;
+		margin: auto;
+	}
+		.jumbotron .google img {
+	width: 50%;
+	margin-top: 20px;
+}
+	
+}
 
 
 
