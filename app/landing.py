@@ -30,6 +30,6 @@ class HomePage(YumSearchRequestHandler):
     	#the_page = response.read()
 
     	#redirect the user the Document
-    	self.redirect('https://drive.google.com/open?id=0B2ItpO1CAjO9ckM0WTlmdFRaN0k')
+    	self.redirect('https://drive.google.com/file/d/0B2ItpO1CAjO9OXkwaEMxaWJTWnc/view?usp=sharing')
 
 
