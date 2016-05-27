@@ -1,5 +1,7 @@
 from framework.request_handler import YumSearchRequestHandler
 from models.customer_details import customer_details
+import urllib2
+
 
 
 class HomePage(YumSearchRequestHandler):
@@ -21,4 +23,13 @@ class HomePage(YumSearchRequestHandler):
     		number = number,
     		product = product,
     	)
-    	self.redirect('/')
+
+    	#download file
+    	#req = urllib2.Request('https://drive.google.com/open?id=0B2ItpO1CAjO9ckM0WTlmdFRaN0k')
+    	#response = urllib2.urlopen(req)
+    	#the_page = response.read()
+
+    	#redirect the user the Document
+    	self.redirect('https://drive.google.com/open?id=0B2ItpO1CAjO9ckM0WTlmdFRaN0k')
+
+
