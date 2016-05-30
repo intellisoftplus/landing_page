@@ -24,7 +24,7 @@ class customer_details(ndb.Model):
     		).put()
 
     	#send an email to sales team
-    	message = mail.EmailMessage(sender="ISP Marketting Campaign <noreply@isplandingpage.appspotmail.com>",subject="NEW SIGN UP - REQUIRES YOUR ATTENTION")
+    	message = mail.EmailMessage(sender="ISP Marketting Campaign <noreply@isplandingpage2.appspotmail.com>",subject="NEW SIGN UP - REQUIRES YOUR ATTENTION")
     	message.to = "chantal@intellisoftplus.com,wakari@intellisoftplus.com,reshiwani@intellisoftplus.com"
     	message.body = """
 				New sign up,
