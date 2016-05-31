@@ -1,8 +1,14 @@
 /*****************
 Common
 ******************/
-.reg-logo, .reg-sub {
+.reg-logo, .reg-sub, .library .row:nth-child(1) {
 	text-align: center;
+}
+/*****************
+Navigation
+******************/
+.navbar {
+	height: 70px;
 }
 /*****************
 Forms
@@ -35,6 +41,10 @@ Logo & Images
 .reg-logo img{
 	width: 250px;
 }
+.navbar-brand img {
+	width: 150px;
+	margin-top: -30px;
+}
 /*****************
 Jumbotron
 ******************/
@@ -54,6 +64,10 @@ Typography
 .reg-sub {
 	margin-top: -20px;
 }
+.navbar li a {
+	font-size: 1.3em;
+	margin-top: 12px;
+}
 /*****************
 Layouts
 ******************/
@@ -67,5 +81,11 @@ Layouts
 	padding-bottom: 50px;
 	box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
 	border-radius: 2px;
-	
+}
+.course-title, .course-intro {
+	border: 1px solid;
+	padding: 20px 15px;
+}
+.course-title {
+	margin-top: 100px;
 }

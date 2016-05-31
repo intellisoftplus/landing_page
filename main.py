@@ -32,6 +32,10 @@ class Signin(webapp2.RequestHandler):
 	def get(self):
 		self.response.write('Hello World!') 
 
+class Subscribe(webapp2.RequestHandler):
+	def get(self):
+		self.response.write('Hello World!')
+		pass
 app = webapp2.WSGIApplication([
     ('/', MainHandler)
     ], debug=True)
