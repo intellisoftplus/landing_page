@@ -60,5 +60,7 @@ class MSHomePage(YumSearchRequestHandler):
         #redirect the user the Document
         self.redirect('https://drive.google.com/file/d/0B2ItpO1CAjO9OXkwaEMxaWJTWnc/view?usp=sharing')
 
-
+class Signin(YumSearchRequestHandler):
+    def get(self):
+        self.render('google_landing/signin.html')
 

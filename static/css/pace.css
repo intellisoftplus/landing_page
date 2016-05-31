@@ -1,0 +1,70 @@
+/*****************
+Common
+******************/
+.reg-logo, .reg-sub {
+	text-align: center;
+}
+/*****************
+Forms
+******************/
+.form input {
+	border: none;
+	border-bottom: 1px solid;
+	border-radius: 0;
+	margin: 50px 0;
+	box-shadow: none;
+}
+.form input:focus  {
+	box-shadow: none;
+	border-color:  rgb(44,148,150);
+	border-width: 2px;
+	
+}
+/*****************
+Buttons
+******************/
+.form button {
+	background-color: rgb(44,148,150);
+	color: #fff;
+	border-radius: 2px;
+	width: 100%;
+}
+/*****************
+Logo & Images
+******************/
+.reg-logo img{
+	width: 250px;
+}
+/*****************
+Jumbotron
+******************/
+.jumbotron{
+	  background:  linear-gradient(
+  rgba(44,148,150,0.35), 
+  rgba(44,148,150,0.35)
+  ),url("../images/hist.JPG");
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	  height: 800px;
+	  margin-bottom: 0;
+}
+/*****************
+Typography
+******************/
+.reg-sub {
+	margin-top: -20px;
+}
+/*****************
+Layouts
+******************/
+.reg-card {
+	background-color: #fff;
+	width: 50%;
+	margin: auto;
+	height: auto;
+	padding: 20px 20px;
+	padding-bottom: 50px;
+	box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
+	border-radius: 2px;
+	
+}
