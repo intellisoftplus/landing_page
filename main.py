@@ -22,7 +22,11 @@ class MainHandler(webapp2.RequestHandler):
 
 class Microsoft(webapp2.RequestHandler):
 	def get(self):
-		self.response.write('Hello World!')  
+		self.response.write('Hello World!') 
+
+class Register(webapp2.RequestHandler):
+	def get(self):
+		self.response.write('Hello World!')		 
 
 class Signin(webapp2.RequestHandler):
 	def get(self):
