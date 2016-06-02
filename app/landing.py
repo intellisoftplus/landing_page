@@ -71,3 +71,11 @@ class Signin(YumSearchRequestHandler):
 class Subscribe(YumSearchRequestHandler):
     def get(self):
         self.render('google_landing/subscribe.html')
+
+class Details(YumSearchRequestHandler):
+    def get(self):
+        self.render('google_landing/details.html')        
+
+class Lessons(YumSearchRequestHandler):
+    def get(self):
+        self.render('google_landing/lessons.html')        

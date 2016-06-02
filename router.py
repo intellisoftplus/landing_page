@@ -7,9 +7,9 @@ app = WSGIApplication(
 	Route('/ms_landing', handler='app.landing.MSHomePage'),
 	Route('/signin', handler='app.landing.Signin'),
 	Route('/register', handler='app.landing.Register'),
-	Route('/subscribe', handler='app.landing.Subscribe')       
-
-
+	Route('/subscribe', handler='app.landing.Subscribe'),
+	Route('/details', handler='app.landing.Details'),
+	Route('/lessons', handler='app.landing.Lessons')      
 
 ]
 )
