@@ -22,9 +22,29 @@ class MainHandler(webapp2.RequestHandler):
 
 class Microsoft(webapp2.RequestHandler):
 	def get(self):
-		self.response.write('Hello World!')        
+		self.response.write('Hello World!') 
 
+class Register(webapp2.RequestHandler):
+	def get(self):
+		self.response.write('Hello World!')		 
+
+class Signin(webapp2.RequestHandler):
+	def get(self):
+		self.response.write('Hello World!') 
+
+class Subscribe(webapp2.RequestHandler):
+	def get(self):
+		self.response.write('Hello World!')
+
+class Details(webapp2.RequestHandler):
+	def get(self):
+		self.response.write('Hello World')
+
+class Lessons(webapp2.RequestHandler):
+	def get(self):
+		self.response.write('Hello World')		
+
+		pass
 app = webapp2.WSGIApplication([
-    ('/', MainHandler),
-    #('/landing-microsoft', Microsoft)
-], debug=True)
+    ('/', MainHandler)
+    ], debug=True)
