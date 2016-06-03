@@ -30,7 +30,8 @@ class HomePage(YumSearchRequestHandler):
     	#the_page = response.read()
 
     	#redirect the user the Document
-    	self.redirect('https://drive.google.com/file/d/0B2ItpO1CAjO9aGw2TFVTd3hpcmc/view?usp=sharing')
+    	self.redirect('https://drive.google.com/uc?export=download&id=0B2ItpO1CAjO9aGw2TFVTd3hpcmc')
+        #self.redirect('/')
 
 class MSHomePage(YumSearchRequestHandler):
     def get(self):
@@ -53,12 +54,13 @@ class MSHomePage(YumSearchRequestHandler):
         )
 
         #download file
-        #req = urllib2.Request('https://drive.google.com/open?id=0B2ItpO1CAjO9ckM0WTlmdFRaN0k')
+        #req = urllib2.Request('https://drive.google.com/uc?export=download&id=0B2ItpO1CAjO9OXkwaEMxaWJTWnc')
         #response = urllib2.urlopen(req)
         #the_page = response.read()
 
         #redirect the user the Document
-        self.redirect('https://drive.google.com/file/d/0B2ItpO1CAjO9OXkwaEMxaWJTWnc/view?usp=sharing')
+        self.redirect('https://drive.google.com/uc?export=download&id=0B2ItpO1CAjO9OXkwaEMxaWJTWnc')
+        #self.redirect('/ms_landing')
 
 class Register(YumSearchRequestHandler):
     def get(self):
